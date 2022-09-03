@@ -6,7 +6,11 @@ jobs:
       - image: busybox:latest
     steps:
       # - checkout
-      - run: echo hello
+      - run: 
+          name: "Run hello Part"
+          command: |
+            ls
+            pwd
   print_world:
     docker:
       - image: alpine:latest
