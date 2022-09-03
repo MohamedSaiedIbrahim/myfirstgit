@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: busybox:latest
     steps:
-      # - checkout
+      - checkout
       - run: 
           name: "Run hello Part"
           command: |
